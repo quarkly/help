@@ -16,7 +16,7 @@ Top bar is a bar at the top of the builder. It allows you to open the layers and
 
 -   **Project Name**<br /> With a double click, you can change the project name.
 
--   **Actions on the Project**<br /> Here you rename the project, open its properties, share the project with others, or delete it. To do this, click the ![Arrow Down](/img/icon-arrow-down. svg) icon and a list of actions will appear:
+-   **Actions on the Project**<br /> Here you rename the project, open its properties, share the project with others, or delete it. To do this, click the ![Arrow Down](/img/icon-arrow-down.svg) icon and a list of actions will appear:
 
     -   [Share](/interface/top-bar/share)
     -   [Settings](/interface/right-panels/project-settings/overview)

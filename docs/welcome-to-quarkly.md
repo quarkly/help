@@ -5,6 +5,8 @@ sidebar_label: Welcome to Quarkly
 slug: /
 ---
 
+![](/img/header-illustration.png)
+
 ### What is Quarkly
 
 Quarkly is a tool for creating websites, landing pages, and web applications. It combines a visual editor, an integrated development environment, and a website builder. Web specialists can work together on a single project:

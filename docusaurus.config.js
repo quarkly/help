@@ -1,7 +1,7 @@
 module.exports = {
 	title: 'Quarkly docs',
-	tagline: 'The tagline of my site',
-	url: 'https://your-docusaurus-test-site.com',
+	tagline: 'A tool for building websites and web applications',
+	url: 'https://help.quarkly.io/',
 	baseUrl: '/',
 	plugins: [require.resolve('docusaurus-lunr-search')],
 	onBrokenLinks: 'throw',
@@ -10,14 +10,14 @@ module.exports = {
 	organizationName: 'quarkly-team',
 	projectName: 'quarkly-docs',
 	themeConfig: {
-		// image: '/img/q-og-1200.png',
-		metadatas: [{name: 'twitter:card', content: 'summary'}],
+		image: '/img/q-og-1200.png',
+		metadatas: [{ name: 'twitter:card', content: 'summary' }],
 		colorMode: {
 			defaultMode: 'light',
 			disableSwitch: true,
 		},
 		navbar: {
-			title: 'Help',
+			title: 'Quarkly docs',
 			style: 'dark',
 			logo: {
 				alt: 'Quarkly logo',
@@ -26,12 +26,12 @@ module.exports = {
 				href: '/',
 				target: '_self',
 			},
-			hideOnScroll: true,
+			hideOnScroll: false,
 		},
 		footer: {
 			style: 'dark',
 			logo: {
-				alt: 'My Site Logo',
+				alt: 'Quarkly logo',
 				src: '/img/quarkly-beta-logo-on-dark.svg',
 			},
 			links: [
@@ -97,6 +97,77 @@ module.exports = {
 			],
 			copyright: `© ${new Date().getFullYear()} All Rights Reserved`,
 		},
+		prism: {
+			theme: {
+				plain: {
+					color: '#000000',
+					backgroundColor: '#F6F7F8',
+				},
+				styles: [
+					{
+						types: ['prolog', 'constant', 'symbol', 'builtin'],
+						style: {
+							color: '#9C5D27',
+						},
+					},
+					{
+						types: ['inserted', 'changed', 'deleted'],
+						style: {
+							color: '#000000',
+						},
+					},
+					{
+						types: ['function'],
+						style: {
+							color: '#AA3731',
+						},
+					},
+					{
+						types: ['punctuation'],
+						style: {
+							color: '#91B3E0',
+						},
+					},
+					{
+						types: ['tag'],
+						style: {
+							color: '#4B69C6',
+						},
+					},
+					{
+						types: ['string', 'char'],
+						style: {
+							color: '#448C27',
+						},
+					},
+					{
+						types: ['selector', 'variable'],
+						style: {
+							color: '#7A3E9D',
+						},
+					},
+					{
+						types: ['keyword'],
+						style: {
+							color: '#4B69C6',
+						},
+					},
+					{
+						types: ['comment'],
+						style: {
+							fontStyle: 'italic',
+							color: '#AAAAAA',
+						},
+					},
+					{
+						types: ['attr-name'],
+						style: {
+							color: '#8190A0',
+						},
+					},
+				],
+			},
+		},
 	},
 	presets: [
 		[
@@ -105,9 +176,7 @@ module.exports = {
 				docs: {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
-					// Please change this to your repo.
-					editUrl:
-						'https://github.com/facebook/docusaurus/edit/master/website/',
+					editUrl: 'https://github.com/quarkly/help/',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),

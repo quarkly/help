@@ -68,17 +68,17 @@ module.exports = {
 							href: 'https://twitter.com/quarklyapp',
 						},
 						{
-							label: 'Youtube',
+							label: 'YouTube',
 							href: 'https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw',
 						},
 						{
-							label: 'Github',
+							label: 'GitHub',
 							href: 'https://github.com/quarkly',
 						},
 					],
 				},
 				{
-					title: 'Community',
+					title: 'Help',
 					items: [
 						{
 							label: 'Community',
@@ -89,8 +89,8 @@ module.exports = {
 							href: 'https://discord.com/invite/AevfxmF3TM',
 						},
 						{
-							label: 'Feedback',
-							href: 'https://feedback.quarkly.io/',
+							label: 'Guide for Developers',
+							href: 'https://developers.quarkly.io/',
 						},
 					],
 				},

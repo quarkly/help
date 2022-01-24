@@ -19,9 +19,9 @@ You can make subcomponents so that they can be selected and styled on the panel.
 
 On the Adding panel in the Components section, you can find all your components:
 
-- added from elements to the page,
-- added from the catalog,
-- custom components.
+- added from elements to the page
+- added from the catalog
+- custom components
 
 To create a code component, click on the "+" icon. A window will open for you to enter the component name. After entering the name, a component with default code is created. You can edit it if needed.
 

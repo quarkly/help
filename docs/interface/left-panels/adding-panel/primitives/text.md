@@ -6,11 +6,11 @@ sidebar_label: Text
 
 ![The Text Primitive on Page](/scr/primitives-text.png)
 
-##### The Text primitive displays text information on the page
+**The Text primitive displays text information on the page**
 
-Part of the text can be converted into a Link primitive or span. Link and Span within Text can be styled separately from Text.
+Part of the text can be converted into a Link primitive or Span. Link and Span within Text can be styled separately from Text.
 
-#### Available props
+##### Available props
 
 | Prop name     | Description                                                                                                                             |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------- |

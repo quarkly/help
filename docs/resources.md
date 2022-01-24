@@ -1,7 +1,7 @@
 ---
 id: resources
 title: Resources
-sidebar_label: Resources
+sidebar_label: 📚 Resources
 ---
 
 import Link from "../src/components/NavLink";

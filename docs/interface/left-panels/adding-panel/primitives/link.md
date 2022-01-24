@@ -6,17 +6,17 @@ sidebar_label: Link
 
 ![The Link Primitive on Page](/scr/primitives-link.png)
 
-##### The Link primitive is used for:
+The Link primitive is used for:
 
--   creating a link to other pages;
--   creating a link to parts within the current or another page (anchor link);
--   creating a link to open files;
--   creating a link to write an email;
--   creating a link with a phone number.
+-   creating a link to other pages
+-   creating a link to parts within the current or another page (anchor link)
+-   creating a link to open files
+-   creating a link to write an email
+-   creating a link with a phone number
 
 In the Link properties, you can set the target address, the tab behavior when you click the link, the Link behavior when transferring lines and when overflowing.
 
-#### Available props
+##### Available props
 
 | Prop name     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

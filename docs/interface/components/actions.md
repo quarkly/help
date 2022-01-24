@@ -6,7 +6,7 @@ sidebar_label: Actions on Components
 
 ![Context menu for a component](/scr/components-context-menu.png)
 
-You can open the [context menu](/interface/context-menu) for a component. The menu contains a list of actions you can do to the component. To open it, mouse over the component and `right-click` on it.
+You can open the [context menu](/interface/left-panels/context-menu) for a component. The menu contains a list of actions you can do to the component. To open it, mouse over the component and `right-click` on it.
 
 ### Creating a Component on a Page
 

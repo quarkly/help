@@ -6,11 +6,11 @@ sidebar_label: Icon
 
 ![The Icon Primitive on Page](/scr/primitives-icon.png)
 
-##### An icon is from a set available in the builder.
+**An icon is from a set available in the builder**
 
 In the properties, you can specify the icon size and color and choose the icon itself from the provided sets.
 
-#### Available props
+##### Available props
 
 | Prop name | Description                                                                                                                                                                                                                                                                                                |
 | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

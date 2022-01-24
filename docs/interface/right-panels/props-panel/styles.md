@@ -42,4 +42,10 @@ To configure the styles for a pseudo-class, select the desired style in the tab 
 
 <YouTube videoId="esh5UtPaXcU" />
 
+### About CSS-property
+
+![Styles about](/scr/props-panel-styles-about.png)
+
+To learn more about each CSS property, you can click on the icon ![FAQ CSS styles](/scr/primitives-about.png). An icon is displayed next to each property when you hover your mouse cursor over it.
+
 ---

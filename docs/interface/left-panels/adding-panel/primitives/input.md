@@ -6,11 +6,11 @@ sidebar_label: Input
 
 ![The Input Primitive on Page](/scr/primitives-input.png)
 
-##### The Input primitive is a single or multi-line text input field. It's used for transferring text information to the form.
+**The Input primitive is a single or multi-line text input field. It's used for transferring text information to the form.**
 
 In the properties, you can select the Input type, enter the placeholder, specify the default value, set the flags of mandatory or disabled state.
 
-#### Available props
+##### Available props
 
 | Prop name    | Description                                                       |
 | :----------- | :---------------------------------------------------------------- |

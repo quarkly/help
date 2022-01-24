@@ -14,7 +14,7 @@ sidebar_label: 🚀 Getting Started
 
 3. After that you can choose any ready-made template or choose a blank canvas.
 
-![Template selection](/scr/template-selection.png)
+![Template selection](/scr/getting-started-template-selection.png)
 
 4. Now go to the project. To do that, click it or call the context menu and select "**Open**". 
 

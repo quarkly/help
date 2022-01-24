@@ -17,7 +17,7 @@ Add a Box first, and inside it add the following one by one:
 
 ### Change the text as shown in the example
 
-![Code editor image](/scr/day4-image-card-with-text.png)
+![Image of the card with text](/scr/day4-image-card-with-text-icon-button.png)
 
 ### Set background
 

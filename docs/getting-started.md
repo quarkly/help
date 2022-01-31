@@ -16,7 +16,7 @@ sidebar_label: 🚀 Getting Started
 
 ![Template selection](/scr/getting-started-template-selection.png)
 
-4. Now go to the project. To do that, click it or call the context menu and select "**Open**". 
+4. Now go to the project. To do that, click on it or right click to view the context menu and select "**Open**". 
 
 ![Project context menu on the dashboard](/scr/getting-started-dashboard-opening.png)
 
@@ -32,7 +32,7 @@ sidebar_label: 🚀 Getting Started
 
 ![Selecting a ready-made block from the catalog](/scr/getting-started-interface-choose-block.png)
 
-8.  Now select the text element on the page. Click it while pressing `Ctrl`, or `⌘(Cmd)` on MacOS. This allows you to select elements while ignoring parent ones. You can also select child elements by double-clicking them. 
+8.  Now select the text element on the page. Click it while pressing `Ctrl`, or `⌘(Cmd)` on MacOS. This allows you to select elements while ignoring parent ones. You can also select child elements by double-clicking on them. 
 
 ![Selecting components on the page](/scr/getting-started-interface-select-element.png)
 
@@ -40,11 +40,11 @@ sidebar_label: 🚀 Getting Started
 
 ![Changing the text color on the props panel](/scr/getting-started-interface-edit-font-color.png)
 
-10.  Edit text. To do that, double-click the text in the selected element. 
+10.  Edit text. To do this, double-click on the text in the selected element. 
 
 ![Text editing](/scr/getting-started-interface-edit-text.png)
 
-11.  You can create pages. To do that, open the [Pages and Layers](/interface/left-panels/pages-and-layers/overview) panel. 
+11.  You can create pages. To do this, open the [Pages and Layers](/interface/left-panels/pages-and-layers/overview) panel. 
 
 !["Pages and Layers" panel](/scr/getting-started-interface-pages-and-layers.png)
 
@@ -76,7 +76,7 @@ sidebar_label: 🚀 Getting Started
 
 ![Creating a new website](/scr/getting-started-interface-publication-netlify-new-site.png)
 
-19. The process of project building takes a few minutes. Once the badge changes status to "**Success**", the project is published and available via a link. 
+19. The process of project building takes a few minutes. Once the badge changes its status to "**Success**", the project is published and available via a link. 
 
 ![Project building status](/scr/getting-started-interface-publication-netlify-status.png)
 

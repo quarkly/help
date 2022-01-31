@@ -16,7 +16,6 @@ You can make subcomponents so that they can be selected and styled on the panel.
 
 ![How to create a custom component](/scr/day13-components-general.png)
 
-
 On the Adding panel in the Components section, you can find all your components:
 
 - added from elements to the page
@@ -74,7 +73,7 @@ propInfo: {
 }
 ```
 
-Read more about what types of controls you can use (http://developers.quarkly.io/components/properties/propinfo-object)
+Read more about what [types of controls](http://developers.quarkly.io/components/properties/propinfo-object) you can use.
 
 ### How to make subcomponents selectable and stylable (Overrides)
 Overrides allow you to select nested subcomponents on the layers, and change their styles and props in the builder or directly in the component code. To do this, follow the steps below:
@@ -84,10 +83,10 @@ Overrides allow you to select nested subcomponents on the layers, and change the
 3. Use Overrides in a Component
 4. Export a Component with Overrides
 
-Read more about how to [work with overrides](http://developers.quarkly.io/components/overrides/overview)
+Read more about how to [work with overrides](http://developers.quarkly.io/components/overrides/overview).
 
 
-You can find full info about how to work with components in the [guide for developers](https://developers.quarkly.io/)
+You can find full info about how to work with components in the [guide for developers](https://developers.quarkly.io/).
 
 
 **Congratulations!** You've covered all Quarkly basics.

@@ -26,7 +26,7 @@ The project creating process in Quarkly contains several stages:
 
 ### How Quarkly works
 
-All Quarkly projects are based on *React components* and the *@quarkly/atomize* library. Every single primitive on the editor's layout is ready-to-use and reusable code.
+All Quarkly projects are based on *React components* and the *@quarkly/atomize* library. Every single primitive on the editor's layout is ready-to-use and reusable.
 
 When you create a new layout, prototype, or component, *Quarkly generates real code for you* which can later be used by the developer and finalized or exported and published without changes.
 

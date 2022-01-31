@@ -14,31 +14,33 @@ So a component can also be a header, a button, or a link with certain styles. Th
 ### Turning a card into a component
 
 **Convert to Component**<br/>
-As an example, let's create a component from the previously created card. To do this, select the Box primitive holding `CTRL` or `⌘` for MacOS and `right-click` and select *Create new Component* and enter a name for the new component, for example: *Card*. Done! The first component is created!<br/>
+As an example, let's create a component from the previously created card. To do this, select the Box primitive holding `CTRL` or `⌘` for MacOS and `right-click` and select *Create new Component* and enter a name for the new component, for example: *Card*.
+
+Done! The first component is created!<br/>
 
 ![Convert to Component](/scr/day8-convert-to-component.png)
 
 ### Duplicating a card
 
-Now the Card is in the Components section, and you can add it anywhere on the page. Let's place the second Card next to the first one as an example:<br/>
+Now the Card is in the Components section, and you can add it anywhere on the page. Let's place the second Card next to the first one as an example.<br/>
 
 ![Duplicating a card](/scr/day8-duplicate-card.png)
 
 ### Setting styles for the variant (Override)
 
-1. Set styles for one of the cards
-   You can also change the style of the card. Add indentation and set the indent 16px: <br/>
+Set styles for one of the cards
+You can also change the style of the card. Add indentation and set the indent 16px.<br/>
 
-   ![Setting styles card](/scr/day8-setting-styles-card.png)
+![Setting styles card](/scr/day8-setting-styles-card.png)
 
-   As you can see, the changes were applied correctly.
+As you can see, the changes were applied correctly.
 
 ### Make all cards like the selected option (send to the master)
 
-1. *Push All to Master* or *Push to Master*
-  There are some real advantages here. Select the modified Card and `right-click`. In this interface, you have 5 new items:
+*Push All to Master* or *Push to Master*
+There are some real advantages here. Select the modified Card and `right-click`. In this interface, you have 5 new items.
   
-  ![Push to Master](/scr/day8-push-all-master.png)
+![Push to Master](/scr/day8-push-all-master.png)
 
 - First, select *Push to Master* and use it to send changes to all copies of the Card component in the project. If you remember, you previously set a value for only one copy of the Card component.
   After applying *Push to Master*, the changes (margin) were applied to all copies of the Card component in the project.

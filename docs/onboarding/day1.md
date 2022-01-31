@@ -1,7 +1,7 @@
 ---
 id: day1
-title: Day 1. Interface basics 1
-sidebar_label: Day 1. Interface basics 1
+title: Day 1. Interface Basics 1
+sidebar_label: Day 1. Interface Basics 1
 ---
 
 import OnboardingTutorialCodeUndo from '/src/svg/onboarding-tutorial-code-undo.svg';
@@ -9,7 +9,7 @@ import OnboardingTutorialCodeRedo from '/src/svg/onboarding-tutorial-code-redo.s
 
 ### Moving a page in the interface
 
-Drag the page wherever you want!
+Drag the page wherever you want
 
 * Hold down the `SPACE` key and the `left mouse button`.
 * Use the mouse to move the page.
@@ -19,7 +19,7 @@ Drag the page wherever you want!
 
 Zoom in to take a closer look at the details and choose a specific element. Zoom out to get an overall view of the page design.
 * To zoom in, press `CTRL` `+` or `⌘` `+` on Mac.
-* To zoom out, press `CTRL` `-` or `⌘` `-` on Mac:
+* To zoom out, press `CTRL` `-` or `⌘` `-` on Mac.
 * To get back to 100% zoom, press `CTRL` `0` or `⌘` `0` on Mac.
 * On a touchpad, you can zoom in and out with pinch and spread gestures.
 * Or, you can select a custom zoom level in the top bar.

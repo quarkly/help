@@ -30,8 +30,9 @@ import OnboardingTutorialTransitionFilled from '/src/svg/onboarding-tutorial-tra
 
 ### Change the button background color
 
+1.  You can also set hover effects for other elements. Choose the Button primitive, go to the hover tab, set Background, and choose the color-orange `#FF7C22` color.
+   
    ![Hover button](/scr/day6-hover-button.png)<br/>
-   You can also set hover effects for other elements. Choose the Button primitive, go to the hover tab, set Background, and choose the color-orange (#FF7C22) color.
 
 :::note
 You can also check how this property works in the *Preview mode*. 

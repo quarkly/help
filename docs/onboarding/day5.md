@@ -42,7 +42,7 @@ Select Box and change the Children wrap to wrap. Now the elements can be moved.
 This property defines the direction of the elements in the Flex container along the main axis: in a column or in a row.
 
 1. By default, the row value is applied.
-   This value displays the child elements horizontally, from left to right.
+   This value displays the nested elements horizontally, from left to right.
 2. Let's set the column value for our Box. It means that the elements are arranged vertically, from top to bottom.
 
 
@@ -51,10 +51,10 @@ This property defines the direction of the elements in the Flex container along 
 ![Justify content](/scr/onboarding-day5-flex-grid-tutorial-justify-content.png)
 
 
-This property defines how the space around the child elements will be organized along the main axis of the Flex container.
+This property defines how the space around the nested elements will be organized along the main axis of the Flex container.
 
 1. By default, the normal value is applied. Let's set the center value as an example.
-2. Now the child elements are aligned to the center of the vertical axis.
+2. Now the nested elements are aligned to the center of the vertical axis.
 3. Try other values to figure out what the options are.
 
 
@@ -62,7 +62,7 @@ This property defines how the space around the child elements will be organized 
 
 ![Align items](/scr/onboarding-day5-flex-grid-tutorial-align-items.png)
 
-This property defines how the space around the child elements will be organized along the perpendicular axis of the Flex container.
+This property defines how the space around the nested elements will be organized along the perpendicular axis of the Flex container.
 
 1. By default, the normal value is applied. It aligns the elements to the left side of the browser. Let's set the Align-items prop to the center value as an example.
 2. As we see in the example, your content is centered based on the vertical axis.

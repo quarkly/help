@@ -215,7 +215,12 @@ module.exports = {
       type: "category",
       label: "🎓 Tutorials",
       collapsed: false,
-      items: ["tutorials/overview", "tutorials/integration-with-firebase"],
+      items: [
+        "tutorials/overview",
+        "tutorials/integration-with-firebase",
+        "tutorials/integration-with-airtable",
+        "tutorials/integration-with-paypal",
+      ],
     },
     {
       type: "doc",

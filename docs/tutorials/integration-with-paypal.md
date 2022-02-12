@@ -5,15 +5,15 @@ sidebar_label: Integration with PayPal
 ---
 
 
-Для примера создадим сайт для продажи нескольких товаров с использованием PayPal.
+Let’s create a website with several goods for sale using PayPal.
 
-## 1. Контент сайта
+## 1. Create a project in Quarkly
 
-Создаем новый пустой проект в Quarkly.
+Create an empty project.
 
-### 1.1 Создаем Главную страницу
+### 1.1 Create the main page
 
-Копируем код ниже, и вставляем его в нашу страницу.
+Copy the below code and paste it into the page.
 
 ```jsx
 <Section padding="80px 0 80px 0">
@@ -208,13 +208,13 @@ sidebar_label: Integration with PayPal
 </Section>
 ```
 
-Получаем вот такой результат:
+Here is the result you should get:
 
 ![Site preview](/scr/tutorials/integration-with-paypal-site-preview.png)
 
-### 1.2 Компонент оплаты
+### 1.2 Create the PayPal payment component
 
-Создаем компонент с названием QuarklyPayPal.
+Create a component named QuarklyPayPal.
 
 ```jsx
 import React from 'react';
@@ -222,29 +222,29 @@ import atomize from "@quarkly/atomize";
 import { Box } from "@quarkly/widgets"
 import { PayPalButton } from "react-paypal-button-v2";
 
-const QuarklyPaypalButton = ({ clientId, amount, itemName, currencyCode, itemDescription, ...props }) => {
+const QuarklyPaypalButton = ({ clientId, price, itemName, currencyCode, itemDescription, ...props }) => {
   return <Box {...props}>
     <PayPalButton
       currency={currencyCode}
-      // onSuccess вызывается при успешном совершении транзакции
-      // Здесь можно отправить запрос, чтобы сохранить эту транзакцию
+      // onSuccess is called in case of a successful transaction
+      // Here you can send a request to save the transaction
       onSuccess={(details, data) => {
         const transactionId = details.purchase_units[0].payments.captures[0].id;
         
         alert(`Transaction completed by ${details.payer.name.given_name}\nYour transaction id: ${transactionId}`);
       }}
-      // Подробнее о createOrder:
+      // More details about createOrder:
       // https://developer.paypal.com/sdk/js/reference/#createorder
       createOrder={(data, actions) => {
         return actions.order.create({
           purchase_units: [{
             amount: {
               currency_code: currencyCode,
-              value: amount,
+              value: price,
               breakdown: {
                 item_total: {
                   currency_code: currencyCode,
-                  value: amount
+                  value: price
                 }
               }
             },
@@ -253,7 +253,7 @@ const QuarklyPaypalButton = ({ clientId, amount, itemName, currencyCode, itemDes
               description: itemDescription,
               unit_amount: {
                 currency_code: currencyCode,
-                value: amount
+                value: price
               },
               quantity: "1"
             }]
@@ -283,8 +283,8 @@ export default atomize(QuarklyPaypalButton)({
       "QuarklyPaypalButton — my awesome component",
   },
   propInfo: {
-    amount: {
-      title: "Amount",
+    price: {
+      title: "Price",
       control: "input",
       category: "Item"
     },
@@ -310,17 +310,15 @@ export default atomize(QuarklyPaypalButton)({
     }
   }
 }, {
-  amount: "1",
+  price: "1",
   currencyCode: "USD",
   clientId: "sb",
 });
 ```
 
-### 1.3 Страница с товаром
+#### 1.3 Create a page with goods
 
-Создаем страницу с названием **Long Sleeve**. В настройках страницы указываем URL: **long-sleeve**.
-
-![Page Settings](/scr/tutorials/integration-with-paypal-page-settings-url.png)
+Create a page named **Long Sleeve**.
 
 ```jsx
 <Link
@@ -351,7 +349,7 @@ export default atomize(QuarklyPaypalButton)({
 		md-padding="0px 0px 0px 0px"
 		md-margin="0px 0px 30px 0px"
 	>
-		<Image max-width="340px"/src="https://images.unsplash.com/photo-1618354691229-88d47f285158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" md-margin="0px 0px 20px 0px" align-self="center" />
+		<Image max-width="340px" src="https://images.unsplash.com/photo-1618354691229-88d47f285158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" md-margin="0px 0px 20px 0px" align-self="center" />
 	</Box>
 	<Box
 		width="50%"
@@ -430,98 +428,102 @@ export default atomize(QuarklyPaypalButton)({
 </Section>
 ```
 
-Страница должна выглядеть так:
+The page should look like this:
 
-![Product Page](/scr/tutorials/integration-with-paypal-product-page.png)
+![Product page](/scr/tutorials/integration-with-paypal-product-page.png)
 
-Затем сделаем 2 копии страницы. Переименуем одну в **T-shirt Small Logo**, а другую в **T-shirt Big Logo**. Заменим ссылки на **t-shirt-small-logo** и **t-shirt-big-logo** соответственно.
+Let's create two copies of the page. Rename one into **T-shirt Small Logo**, and the other one into **T-shirt Big Logo**.
 
-Поменяем изображения, названия и описания для товаров (изображени для **T-shirt Small Logo и T-shirt Big Logo** можно взять с главной страницы)
+Use the page settings to change the URL in the General tab for the following:
 
-Кроме этого, необходимо поменять пропсы у QuarklyPaypal компонента.
+- For **T-shirt Small Logo** use this **t-shirt-small-logo**
+- For **T-shirt Big Logo** use this **t-shirt-big-logo**
 
-В категории **Item** нужно указать цену, название товара и его описание.
+Let’s change the images, names and descriptions of the goods (you can take images for the **T-shirt Small Logo**  and  **T-shirt Big Logo** from the main page)
 
-В категории **Main** нужно указать валюту и Client ID.
+Besides you should change the props of the QuarklyPayPal component in the right panel.
+
+Specify the price, the name and the description in the **Item** category.
+
+Specify the currency and the Client ID in the **Main** category.
 
 :::note
-💡 Данные свойства должны быть одинаковы для всех товаров
+💡 These features should be the same for all the goods
 
 :::
 
-О том, как получить Client ID будет рассказано в следующем разделе.
+Read the next section to know more about getting the Client ID.
 
-## 2. Настройка PayPal аккаунта (Sandbox)
+## 2. Configure the PayPal account (Sandbox)
 
-Cоздадим **Sandbox** (тестовую) версию приложения. Благодаря этой версии мы сможем проверить все методы оплаты без необходимости проводить реальную оплату.
+Let’s create the **Sandbox** version of the application. You can test all the payment methods without conducting real payments thanks to this version.
 
-Заходим на страницу [My Apps & Credentials](https://developer.paypal.com/developer/applications).
+Go to the following page [My Apps & Credentials](https://developer.paypal.com/developer/applications).
 
 ![My app and credentials](/scr/tutorials/integration-with-paypal-my-app-and-credentials.png)
 
-Нажимаем **Create App**. Указываем название приложения и опять жмем Create App.
+Click **Create App**. Specify the name of the application and click Create App once again.
 
-![Create new app](/scr/tutorials/integration-with-paypal-create-new-app.png)
+![Create New App](/scr/tutorials/integration-with-paypal-create-new-app.png)
 
-![Sandbox app](/scr/tutorials/integration-with-paypal-my-quarkly-sandbox-app.png)
+![My Quarkly Sandbox App](/scr/tutorials/integration-with-paypal-my-quarkly-sandbox-app.png)
 
-Копируем Client ID и в компоненты QuarklyPaypal каждого товара.
+### 3. Check the payment
 
-## 3. Проверяем оплату
+Go to the Sandbox Business Account. You can get the login details in the section [Accounts](https://developer.paypal.com/developer/accounts).
 
-Заходим на Sandbox Buisness Account. Получить данные для входа можно в разделе [Accounts](https://developer.paypal.com/developer/accounts).
+Choose the **Business** type of an account and click  **View/edit account**.
 
-Выбираем из списка аккаунт с типом **Business**, жмем **View/edit account**.
-
-![Account list](/scr/tutorials/integration-with-paypal-account-list.png)
+![View and Edit Account](/scr/tutorials/integration-with-paypal-account-list.png)
 
 :::note
-💡 Желательно это делать в отдельном браузере / режиме инкогнито, чтобы была возможность зайти с Personal Account для проверки работы оплаты со стороны покупателя.
+💡 It would be better to do these actions in a separate browser in the safe mode in order to have an opportunity to check the correctness of the payment functioning on the buyer’s side from your Personal Account.
 
 :::
 
-Переходим на [https://www.sandbox.paypal.com/us/signin](https://www.sandbox.paypal.com/us/signin) и вводим полученные **Email ID** и **System Generated Password**.
+Follow the [https://www.sandbox.paypal.com/us/signin](https://www.sandbox.paypal.com/us/signin) and fill in the **Email ID** and **System Generated Password**.
 
-После авторизации мы попадаем на главную страницу, где у нас отображается сумма баланса в 5000$.
+After logging in you will see the Main page with a balance of US$5,000.
 
-![Account dashboard](/scr/tutorials/integration-with-paypal-account-dashboard.png)
+![Account Dashboard](/scr/tutorials/integration-with-paypal-account-dashboard.png)
 
-Таким же образом заходим с данными от аккаунта с типом **Personal**.
+You can do the same with the **Personal** type of an account.
 
-Интерфейс аккаунта с типом Personal будет отличаться:
+The interface of the Personal type of an account will be different:
 
 ![Dashboard Summary](/scr/tutorials/integration-with-paypal-account-dashboard-summary.png)
 
-Проверим оплату:
+Check the payment:
 
 ![Checking Payment](/scr/tutorials/integration-with-paypal-checking-payment.png)
 
-![Checking Alert](/scr/tutorials/integration-with-paypal-checking-alert.png)
+![Confirm Alert](/scr/tutorials/integration-with-paypal-checking-alert.png)
 
-После оплаты Buisness аккаунт будет выглядеть так:
+The Business account will look the following way after the payment:
 
-![Dashboard after Payment](/scr/tutorials/integration-with-paypal-account-dashboard-after-payment.png)
+![Dashboard After Payment](/scr/tutorials/integration-with-paypal-account-dashboard-after-payment.png)
 
-![PayPal notification](/scr/tutorials/integration-with-paypal-notifications.png)
+![PayPal Notification](/scr/tutorials/integration-with-paypal-notifications.png)
 
-Посмотреть все заказы можно нажав **[View all items ready to ship](https://www.sandbox.paypal.com/listing/transactions?tab=activity&transactiontype=ITEMS_TO_SHIP)**
+You can check all the orders clicking **[View all items ready to ship](https://www.sandbox.paypal.com/listing/transactions?tab=activity&transactiontype=ITEMS_TO_SHIP)**
 
-![All ready to ship items](/scr/tutorials/integration-with-paypal-all-items-ready-to-ship.png)
+![All Items Ready to Ship](/scr/tutorials/integration-with-paypal-all-items-ready-to-ship.png)
 
-Со стороны Personal аккаунта эта страница будет выглядеть так:
 
-![Personal account side](/scr/tutorials/integration-with-paypal-personal-account-side.png)
+The Personal account page will look the following way:
 
-## 4. Настройка PayPal аккаунта (Live)
+![Personal Account Side](/scr/tutorials/integration-with-paypal-personal-account-side.png)
 
-Для создания Live (production версии), необходимо перейти в [My Apps & Credentials](https://developer.paypal.com/developer/applications) и выбрать **Live.**
+### 4. Configuring the PayPal account (Live)
 
-![PayPal live mode](/scr/tutorials/integration-with-paypal-live-mode.png)
+ Go to [My Apps & Credentials](https://developer.paypal.com/developer/applications) to create the **Live** (production) version.
 
-![Live mode create app](/scr/tutorials/integration-with-paypal-live-mode-create-app.png)
+![Live Mode](/scr/tutorials/integration-with-paypal-live-mode.png)
 
-![Live app API](/scr/tutorials/integration-with-paypal-live-app-api.png)
+![Live Mode Create App](/scr/tutorials/integration-with-paypal-live-mode-create-app.png)
 
-Копируем Client ID и в компоненты QuarklyPaypal каждого товара.
+![Live App API](/scr/tutorials/integration-with-paypal-live-app-api.png)
+
+Copy the Client ID and paste it to the props of the QuarklyPaypal component for each of the goods.
 
 ---

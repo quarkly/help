@@ -103,6 +103,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .menu__link--sublist:after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 1.25rem 1.25rem;
+  margin-top: -2px;
+}
+.menu__link--sublist {
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ifm-color-gray-900);
 }
 
 /* PAGINATION BUTTONS */

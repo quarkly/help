@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "🎓 Onboarding",
+      label: "🎓  Onboarding",
       collapsed: false,
       items: [
         "onboarding/overview",
@@ -211,6 +211,16 @@ module.exports = {
         "interface/shortcuts",
       ],
     },
+    // {
+    //   type: "category",
+    //   label: "Pricing and billing",
+    //   collapsed: false,
+    //   items: [
+    //     "pricing-and-billing/overview",
+    //     "pricing-and-billing/account",
+    //     "pricing-and-billing/faq",
+    //   ],
+    // },
     {
       type: "category",
       label: "🎓 Tutorials",

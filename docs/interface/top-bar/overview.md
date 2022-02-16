@@ -20,7 +20,7 @@ Top bar is a bar at the top of the builder. It allows you to open the layers and
 
     -   [Share](/interface/top-bar/share)
     -   [Settings](/interface/right-panels/project-settings/overview)
-    -   [Transfer](/interface/right-panels/project-settings/transfer)
+    -   [Transfer](/interface/top-bar/transfer)
     -   Rename
     -   Delete
 

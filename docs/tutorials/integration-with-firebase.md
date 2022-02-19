@@ -219,7 +219,7 @@ export const useComments = () => {
     const db = getFirestore(firebase);
     // Firebase request:
     // Get comments, in descending timestamp order 
-		// (new comments will be at the top of the list).
+        // (new comments will be at the top of the list).
     const commentsQuery = query(
       collection(db, 'comments'),
       orderBy('timestamp', 'desc')
@@ -263,7 +263,7 @@ export const useAuthor = (id) => {
       // Get the author's document by id
       const authorQuery = doc(db, 'users', id);
 
-	    // Subscribe to changes of query results with the onSnapshot function
+        // Subscribe to changes of query results with the onSnapshot function
       // onSnapshot returns a function to unsubscribe.
       const unsubscribe = onSnapshot(
         authorQuery,
@@ -317,6 +317,19 @@ export const useAuth = () => {
 
   return auth;
 };
+
+// the useFirestore hook is used to get an instance of Firestore
+export const useFirestore = () => {
+  const [db, setDb] = useState();
+
+  useFirebase((firebase) => {
+    setDb(getFirestore(firebase));
+  });
+
+  return db;
+};
+
+export default {}
 ```
 
 :::note
@@ -480,7 +493,7 @@ import {
 } from 'firebase/firestore';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 
-import { useUser, useAuth } from './FirebaseHooks';
+import { useUser, useAuth, useFirestore } from './FirebaseHooks';
 
 const overrides = {
   'Google SignIn Button': {
@@ -523,6 +536,8 @@ const CommentForm = ({ ...props }) => {
   const [user, loading] = useUser();
   // Get an instance of FirebaseAuth
   const auth = useAuth();
+  // Get an instance of Firestore
+  const db = useFirestore();
   // Declare text to store input state 
   const [text, setText] = useState('');
 
@@ -533,7 +548,7 @@ const CommentForm = ({ ...props }) => {
 
   // Function for processing the comment publication button
   const onPostClick = () => {
-    if (text === '') return;
+    if (text === '' || !db) return;
 
     // Add a comment
     addDoc(collection(db, 'comments'), {
@@ -547,7 +562,7 @@ const CommentForm = ({ ...props }) => {
 
   // Function for handling a press of the authorization button
   const onSignInClick = async () => {
-    if (!auth) return;
+    if (!auth || !db) return;
 
     // Authorization via Google
     const { user } = await signInWithPopup(auth, googleProvider);

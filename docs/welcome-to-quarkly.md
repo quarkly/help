@@ -5,7 +5,7 @@ sidebar_label: 👋 Welcome to Quarkly
 slug: /
 ---
 
-![Header image](/scr/header-illustration.png)
+![Header image](/img/header-illustration.png)
 
 ### What is Quarkly
 

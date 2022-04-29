@@ -483,7 +483,7 @@ Choose the **Business** type of an account and click  **View/edit account**.
 
 Follow the [https://www.sandbox.paypal.com/us/signin](https://www.sandbox.paypal.com/us/signin) and fill in the **Email ID** and **System Generated Password**.
 
-After logging in you will see the Main page with a balance of US$5,000.
+After logging in you will see the Main page with a balance of $5,000 US.
 
 ![Account Dashboard](/scr/tutorials/integration-with-paypal-account-dashboard.png)
 

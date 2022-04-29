@@ -182,6 +182,11 @@ const getData = ({
 
 export default getData;
 ```
+:::note
+⚠️ AirTableData **does not** need to be added to the page.
+:::
+
+
 
 #### 2.1.3 Create a Reducer component (module)
 
@@ -228,6 +233,10 @@ export default {
   reducer,
 };
 ```
+
+:::note
+⚠️ Reducer **does not** need to be added to the page.
+:::
 
 #### 2.1.4 Create an AirTableItem component
 

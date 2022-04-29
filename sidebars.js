@@ -230,6 +230,8 @@ module.exports = {
         "tutorials/integration-with-firebase",
         "tutorials/integration-with-airtable",
         "tutorials/integration-with-paypal",
+        "tutorials/integration-with-shopify",
+        "tutorials/integration-with-directual",
       ],
     },
     {

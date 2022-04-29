@@ -20,7 +20,7 @@ import OnboardingTutorialTransitionFilled from '/src/svg/onboarding-tutorial-tra
 
 2. **Change the Background position** <br/>
    Select the previously created Box and go to the hover tab.
-   Now you can change any CSS property that will be applied to the Box when hovering over it. To see how it works, let's change, for example, the Background-position and set the values: 100% 100%. Screenshot:
+   Now you can change any CSS property that will be applied to the Box when hovering over it. To see how it works, let's change, for example, the Background-position and set the values: 100% 0%. Screenshot:
    <OnboardingTutorialBackgroundPosition />
 
 3. **Go to Preview** <br/>

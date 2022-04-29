@@ -48,9 +48,9 @@ sidebar_label: 🚀 Getting Started
 
 !["Pages and Layers" panel](/scr/getting-started-interface-pages-and-layers.png)
 
-12.  To add an element, go to the [Components](/interface/components/overview) panel. There are both simple and complex components. You can also create custom components. 
+12.  To add an element, go to the [Adding](/interface/components/overview) panel. There are both simple and complex components. You can also create custom components. 
 
-!["Components" panel](/scr/getting-started-interface-components.png)
+![Adding panel](/scr/getting-started-interface-components.png)
 
 13. Just drag the component to the desired place and it will become part of the page. 
 

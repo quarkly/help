@@ -11,6 +11,28 @@
 <p align="center">In the documentation, you will find information and tutorials on how to work in Quarkly and create projects. View the documentation <a href="https://help.quarkly.io" target="_blank" title="Quarkly documentation">https://help.quarkly.io</a></p>
 
 
+# 🏁 How to launch
+
+1. Check the version of Node.js. Version must be >= 12
+```
+node -v
+```
+2. If the Node.js version is earlier than 12, download the new version from the website, or run the
+```
+nvm use 14
+```
+3. Pull the repository
+4. Install npm dependencies
+```
+npm i
+```
+5. Run the application
+```
+npm start
+```
+
+
+
 # 💡 About [Quarkly](https://quarkly.io)
 <p>
 A unique tool for webmasters, designers and developers.

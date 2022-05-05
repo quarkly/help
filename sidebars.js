@@ -128,7 +128,7 @@ module.exports = {
                 "interface/left-panels/code-editor/add-components",
                 "interface/left-panels/code-editor/add-properties",
                 "interface/left-panels/code-editor/add-states",
-                "interface/left-panels/code-editor/add-styles",
+                "interface/left-panels/code-editor/add-styles-for-breakpoints",
               ],
             },
           ],

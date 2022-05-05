@@ -10,7 +10,7 @@ sidebar_label: Icon
 
 In the properties, you can specify the icon size and color and choose the icon itself from the provided sets.
 
-##### Available props
+### Available props
 
 | Prop name | Description                                                                                                                                                                                                                                                                                                |
 | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

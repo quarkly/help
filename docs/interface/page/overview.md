@@ -10,11 +10,11 @@ On the page, you can see the page version that is close to how it is going to ap
 
 ### Elements on the page
 
-![Select Elements on the Page](/scr/page-elements-general.png)
+![Select Elements on the Page](/scr/page-elements-panels.png)
 
 Elements are components the page contains. To select an element, click on it. To select several elements at a time, click on the desired elements while holding the `Shift` or `⇧ (Shift)` for MacOS.
 
-![Button Bar and Props Panel of an Element When It's Selected](/scr/page-elements-panels.png)
+![Button Bar and Props Panel of an Element When It's Selected](/scr/page-elements-general.png)
 
 Once an element is selected, the Props panel (on the right) and Button bar (on the page) will appear. In addition, you can manage elements in the Pages and Layers tabs. In these tabs you can perform the following actions to the elements:
 

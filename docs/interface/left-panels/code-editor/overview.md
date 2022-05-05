@@ -18,6 +18,6 @@ There are many useful actions in the code editor, such as duplicate line down, i
 
 ![Code state status](/scr/code-editor-status.png)
 
-In the upper right corner of the code editor window, you can find the save status. If you didn't save the changes, they won't show up on the page. To apply changes to the code, press the key combination `Ctrl` + `S` or `⌘(Cmd)` + `S` for MacOS.
+If no changes have been saved in the code editor, you will see a small circle next to the tab name. If you didn't save the changes, they won't show up on the page. To apply changes to the code, close the code editor, or press the key combination `Ctrl` + `S` or `⌘(Cmd)` + `S` for MacOS.
 
 ---

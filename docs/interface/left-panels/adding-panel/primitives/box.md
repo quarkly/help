@@ -10,7 +10,7 @@ sidebar_label: Box
 
 In the properties, you can choose in what kind of element Box will be displayed on the published site.
 
-##### Available props
+### Available props
 
 | Prop name | Description                                                                                                                                           |
 | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |

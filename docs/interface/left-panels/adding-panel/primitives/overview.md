@@ -25,7 +25,7 @@ To add an element to the page, just drag and drop it where you want. You can als
 
 You can set the style and functional properties to primitives. Each has its own unique set.
 
-##### Info about primitives
+### Info about primitives
 
 If you want to get detailed information about the primitive and its props, you can click on the icon ![Info about primitives](/scr/primitives-about.png)
 

@@ -10,7 +10,7 @@ sidebar_label: Text
 
 Part of the text can be converted into a Link primitive or Span. Link and Span within Text can be styled separately from Text.
 
-##### Available props
+### Available props
 
 | Prop name     | Description                                                                                                                             |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------- |

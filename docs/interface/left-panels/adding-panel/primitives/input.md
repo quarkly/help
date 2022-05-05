@@ -10,16 +10,16 @@ sidebar_label: Input
 
 In the properties, you can select the Input type, enter the placeholder, specify the default value, set the flags of mandatory or disabled state.
 
-##### Available props
+### Available props
 
 | Prop name    | Description                                                       |
 | :----------- | :---------------------------------------------------------------- |
 | name         | Unique field name for the form                                    |
-| type         | form element type: text, email, tel, date, number, file, search   |
-| placeholder  | placeholder                                                       |
-| defaultValue | default field value                                               |
-| required     | flag indicating a required field                                  |
-| disabled     | flag indicating the field is disabled by default                  |
+| type         | Form element type: text, email, tel, date, number, file, search   |
+| placeholder  | The placeholder attribute specifies a short hint that describes the expected value of an input field                                                       |
+| defaultValue | Default field value                                               |
+| required     | Flag indicating a required field                                  |
+| disabled     | Flag indicating the field is disabled by default                  |
 | as           | HTML element that will be used in the document: input or textarea |
 
 ---

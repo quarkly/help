@@ -10,11 +10,11 @@ sidebar_label: List
 
 In the properties, you can choose the list and marker types for the list elements.
 
-##### Available props
+### Available props
 
 | Prop name       | Description                               |
 | :-------------- | :---------------------------------------- |
-| as              | list type: ol (numbered) or ul (bulleted) |
-| list-style-type | marker type for each element on the list  |
+| as              | List type: ol (numbered) or ul (bulleted) |
+| list-style-type | Marker type for each element on the list  |
 
 ---

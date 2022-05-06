@@ -14,15 +14,28 @@ The catalog contains two sections: "**Blocks**" and "**Components**"
 
 All available blocks are divided into the following categories:
 
--   About
--   Cover
--   FAQ
--   Footer
--   Forms
--   Header
--   Simple
--   Social
--   Team
+- About
+- Advantages
+- Cases
+- Comparision
+- Contacts
+- Content
+- Cover
+- Description
+- FAQ
+- Footer
+- Forms
+- Header
+- Hero
+- Partners
+- Price
+- Reviews
+- Schedule
+- Simple
+- Social
+- Statistics
+- Team
+- Wireframe
 
 To add your favorite block to the project, just click on it. It will be added to the end of the page.
 

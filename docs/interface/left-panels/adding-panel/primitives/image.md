@@ -6,11 +6,11 @@ sidebar_label: Image
 
 ![The Image Primitive on Page](/scr/primitives-image.png)
 
-##### The Image primitive represents an image
+**The Image primitive represents an image**
 
 The Image properties specify the source of the image, the cropping method, and alignment when cropping. You can also adjust sources for devices with high pixel densities and for different layouts. The Loading property helps speed up page loading.
 
-#### Available props
+### Available props
 
 | Prop name       | Description                                                                                                                                                                           |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

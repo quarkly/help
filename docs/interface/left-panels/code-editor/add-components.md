@@ -17,10 +17,14 @@ You can add any primitive:
 -   &lt;Box/&gt;
 -   &lt;Button/&gt;
 -   &lt;Hr/&gt;
+-   &lt;Icon /&gt;
 -   &lt;Image/&gt;
 -   &lt;Input/&gt;
 -   &lt;Link/&gt;
+-   &lt;LinkBox/&gt;
 -   &lt;List/&gt;
+-   &lt;Section/&gt;
+-   &lt;Structure/&gt;
 -   &lt;Text/&gt;
 
 ### Custom component
